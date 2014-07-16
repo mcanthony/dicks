@@ -1,4 +1,4 @@
-# dicks
+# dicks [![Build Status](https://travis-ci.org/jimeh/dicks.png)](https://travis-ci.org/jimeh/dicks)
 
 Print a number of random length ASCII dicks (`8====D`) to stdout. Inspired
 by the [dicks](https://rubygems.org/gems/dicks) RubyGem.
