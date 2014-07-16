@@ -60,7 +60,6 @@ func TestMakeDickStream(t *testing.T) {
 			if i <= pair.count && !ok {
 				t.Error("channel closed early")
 			} else if i == pair.count+1 && ok {
-				// fmt.Println("dick:", dick)
 				t.Error("channel closed late")
 			}
 		}
