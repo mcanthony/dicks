@@ -1,9 +1,9 @@
 # dicks
 
-Print a number of random length ASCII dicks (`8====D`) to terminal. Inspired
+Print a number of random length ASCII dicks (`8====D`) to stdout. Inspired
 by the [dicks](https://rubygems.org/gems/dicks) RubyGem.
 
-```bash
+```
 $ dicks
 8======D
 8===D
@@ -29,6 +29,19 @@ Travis-CI integration.
 Recreating the [dicks](https://rubygems.org/gems/dicks) gem seemed like a
 stupid enough pebble-sized mountain to tackle.
 
+
+## Installation
+
+### Binaries
+
+Binaries are available for download on the
+[Releases](https://github.com/jimeh/dicks/releases) page.
+
+### From Source
+
+```bash
+go get github.com/jimeh/dicks
+```
 
 ## License
 
