@@ -10,7 +10,7 @@ $ dicks
 8====D
 8======D
 8=========D
-$ $ dicks 2
+$ dicks 2
 8======D
 8=========D
 $ dicks --balls=":" --shaft="-" --head=">" 3
