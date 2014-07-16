@@ -35,7 +35,15 @@ stupid enough pebble-sized mountain to tackle.
 ### Binaries
 
 Binaries are available for download on the
-[Releases](https://github.com/jimeh/dicks/releases) page.
+[Releases](https://github.com/jimeh/dicks/releases) page for:
+
+- Mac OS X
+- FreeBSD
+- Linux
+- Windows
+- NetBSD
+- OpenBSD
+- Plan9
 
 ### From Source
 
