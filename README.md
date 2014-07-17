@@ -24,7 +24,7 @@ $ dicks --balls=":" --shaft="-" --head=">" 3
 I started playing with Go a few days ago, and wanted a stupidly simple
 throw-away project to experiment with a few things like `go test`,
 [goxc](https://github.com/laher/goxc) for cross-platform binary building,
-Travis-CI integration.
+Travis-CI integration, and more.
 
 Recreating the [dicks](https://rubygems.org/gems/dicks) gem seemed like a
 stupid enough pebble-sized mountain to tackle.
@@ -37,13 +37,13 @@ stupid enough pebble-sized mountain to tackle.
 Binaries are available for download on the
 [Releases](https://github.com/jimeh/dicks/releases) page for:
 
-- Mac OS X
-- FreeBSD
-- Linux
-- Windows
-- NetBSD
-- OpenBSD
-- Plan9
+- Mac OS X / Darwin (x86, amd64)
+- FreeBSD (x86, amd64, arm)
+- Linux (x86, amd64, arm)
+- Windows (x86, amd64)
+- NetBSD (x86, amd64, arm)
+- OpenBSD (x86, amd64)
+- Plan9 (x86)
 
 ### From Source
 
