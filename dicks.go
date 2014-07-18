@@ -16,6 +16,8 @@ type options struct {
 	Balls     string `short:"b" long:"balls" default:"8" description:"Character to used to represent the balls"`
 	Shaft     string `short:"s" long:"shaft" default:"=" description:"Character to used to represent the shaft"`
 	Head      string `short:"H" long:"head" default:"D" description:"Character to used to represent the head"`
+	MaxLength int    `long:"max-length" default:"10" description:"Maximum shaft length allowed for any printed dick"`
+	MinLength int    `long:"min-length" default:"1" description:"Minimum shaft length allowed for any printed dick"`
 	Args      args   `positional-args:"yes"`
 }
 
@@ -37,12 +39,22 @@ func makeDickStream(opts options) chan string {
 
 	go func() {
 		for i := 0; i < count; i++ {
-			stream <- makeDick(opts, rand.Intn(10)+1)
+			length := randomIntWithin(opts.MinLength, opts.MaxLength)
+			stream <- makeDick(opts, length)
 		}
 		close(stream)
 	}()
 
 	return stream
+}
+
+func randomIntWithin(min, max int) int {
+	if min > max {
+		min = max
+	}
+
+	randRange := max - (min - 1)
+	return rand.Intn(randRange) + min
 }
 
 func main() {
