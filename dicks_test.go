@@ -1,8 +1,10 @@
 package main
 
 import (
+	"math/rand"
 	"regexp"
 	"testing"
+	"time"
 )
 
 type makeDickTestPair struct {
@@ -45,6 +47,7 @@ var makeDickStreamTests = []makeDickStreamTestPair{
 }
 
 func TestMakeDickStream(t *testing.T) {
+	rand.Seed(time.Now().UTC().UnixNano())
 	dickRegexp, _ := regexp.Compile("8[=]+D")
 
 	for _, pair := range makeDickStreamTests {

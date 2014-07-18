@@ -28,7 +28,6 @@ func makeDick(opts options, length int) string {
 }
 
 func makeDickStream(opts options) chan string {
-	rand.Seed(time.Now().UTC().UnixNano())
 	stream := make(chan string)
 
 	count := 5
@@ -47,6 +46,8 @@ func makeDickStream(opts options) chan string {
 }
 
 func main() {
+	rand.Seed(time.Now().UTC().UnixNano())
+
 	var opts options
 	flags.Parse(&opts)
 
