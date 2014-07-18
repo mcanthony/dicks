@@ -9,14 +9,14 @@ import (
 )
 
 type args struct {
-	Count int
+	Count int `description:"Number of dicks to print"`
 }
 
 type options struct {
-	Balls string `short:"b" long:"balls" default:"8"`
-	Shaft string `short:"s" long:"shaft" default:"="`
-	Head  string `short:"H" long:"head" default:"D"`
-	Args  args   `positional-args:"yes"`
+	Balls     string `short:"b" long:"balls" default:"8" description:"Character to used to represent the balls"`
+	Shaft     string `short:"s" long:"shaft" default:"=" description:"Character to used to represent the shaft"`
+	Head      string `short:"H" long:"head" default:"D" description:"Character to used to represent the head"`
+	Args      args   `positional-args:"yes"`
 }
 
 func makeDick(opts options, length int) string {
